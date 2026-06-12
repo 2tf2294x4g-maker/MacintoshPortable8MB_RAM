@@ -7948,6 +7948,108 @@
 		)
 		(uuid "39cef48c-66aa-439f-b0a8-cbab26efd52f")
 	)
+	(text "ADDRESS DECODE / CONTROL — ATF1502"
+		(exclude_from_sim no)
+		(at 178 58 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "56954497-ef93-46e0-aee5-6d2dc77471c9")
+	)
+	(text "BUS TRANSCEIVERS"
+		(exclude_from_sim no)
+		(at 272 72 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a1e5996-c072-46a8-b92d-fa38a4e8748b")
+	)
+	(text "MEMORY ARRAY — LOW BYTE (D0–D7)"
+		(exclude_from_sim no)
+		(at 355 42 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "80965efc-b533-4f9f-8993-c32d5a76de4d")
+	)
+	(text "MEMORY ARRAY — HIGH BYTE (D8–D15)"
+		(exclude_from_sim no)
+		(at 355 164 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8729167-4bae-40aa-b572-baf9fac7e00d")
+	)
+	(text "SIZE CONFIG"
+		(exclude_from_sim no)
+		(at 196 148 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba27441e-a533-481d-8642-3c95d11602ac")
+	)
+	(text "JTAG"
+		(exclude_from_sim no)
+		(at 88 150 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c4d858e-9f76-436f-8682-2551c3dd8702")
+	)
+	(text "MAC PORTABLE EXPANSION CONNECTOR"
+		(exclude_from_sim no)
+		(at 178 222 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "362c0b3d-5006-4ba6-afd5-d25ca8299a5d")
+	)
+	(text "DESIGN NOTES — v2.0\n\nMEMORY MAP: 4 banks x 2MB (1Mx16 pairs) fill the expansion window\n0x100000–0x8FFFFF = 8MB (9MB system total). Banks straddle even-MB\nboundaries because the window starts at 1MB.\n\nBANKSEL (CPLD pin 33) = !A20 — selects which 1MB half of each 2MB\nbank is active; drives A19 (pin 18) on all SRAMs.\nChip A0–A18 = Mac A1–A19.\n\nWRITE ENABLES — DO NOT MERGE: /WE (pin 28) = low byte U2–U5,\ngated by /LDS. /WEH (pin 30) = high byte U6–U9, gated by /UDS.\nA common WE corrupts the partner byte on 68000 byte writes.\n\nSIZE JUMPER JP1: OPEN = 8MB (all 8 SRAMs). CLOSED = 4MB\n(populate U2, U3, U6, U7 only = banks 0–1). The CPLD never\ndecodes unpopulated space (Mac boot RAM-sizing safety).\n\nCS2 (SRAM pin 40): active-high 2nd enable, tied to +5V (unused).\nDTACK: not driven by this card — the Portable's CPU GLU generates it.\nALL-5V DESIGN: no LDO. AS6C8008 are 2.7–5.5V parts."
+		(exclude_from_sim no)
+		(at 55 240 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9618a940-e72f-4a4f-bfd7-6863fbc558c0")
+	)
 	(label "SIZE8"
 		(at 203.2 160.655 0)
 		(effects
