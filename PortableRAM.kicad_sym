@@ -1314,7 +1314,7 @@
 			(pin output line
 				(at 33.02 -7.62 0)
 				(length 2.54)
-				(name "CE2"
+				(name "CS2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2253,7 +2253,7 @@
 			(pin input line
 				(at -15.24 -30.48 0)
 				(length 5.08)
-				(name "CE2"
+				(name "CS2"
 					(effects
 						(font
 							(size 1.27 1.27)
