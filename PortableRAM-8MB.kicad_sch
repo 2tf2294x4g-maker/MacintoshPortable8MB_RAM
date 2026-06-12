@@ -3168,7 +3168,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PortableRAM:IS61WV5128BLL"
+		(symbol "PortableRAM:AS6C8008"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3215,7 +3215,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IS61WV5128BLL_0_1"
+			(symbol "AS6C8008_0_1"
 				(rectangle
 					(start -12.7 30.48)
 					(end 12.7 -30.48)
@@ -3228,7 +3228,7 @@
 					)
 				)
 			)
-			(symbol "IS61WV5128BLL_1_1"
+			(symbol "AS6C8008_1_1"
 				(pin input line
 					(at -15.24 27.94 0)
 					(length 2.54)
@@ -3239,7 +3239,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3275,7 +3275,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3293,7 +3293,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3311,7 +3311,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3329,7 +3329,7 @@
 							)
 						)
 					)
-					(number "16"
+					(number "44"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3347,7 +3347,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "43"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3365,7 +3365,7 @@
 							)
 						)
 					)
-					(number "18"
+					(number "42"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3383,7 +3383,7 @@
 							)
 						)
 					)
-					(number "19"
+					(number "39"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3401,7 +3401,7 @@
 							)
 						)
 					)
-					(number "20"
+					(number "28"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3419,7 +3419,7 @@
 							)
 						)
 					)
-					(number "26"
+					(number "27"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3437,7 +3437,7 @@
 							)
 						)
 					)
-					(number "27"
+					(number "26"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3455,7 +3455,7 @@
 							)
 						)
 					)
-					(number "28"
+					(number "25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3473,7 +3473,7 @@
 							)
 						)
 					)
-					(number "29"
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3491,7 +3491,7 @@
 							)
 						)
 					)
-					(number "30"
+					(number "23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3509,7 +3509,7 @@
 							)
 						)
 					)
-					(number "38"
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3527,7 +3527,7 @@
 							)
 						)
 					)
-					(number "39"
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3545,7 +3545,7 @@
 							)
 						)
 					)
-					(number "40"
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3563,7 +3563,7 @@
 							)
 						)
 					)
-					(number "41"
+					(number "19"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3581,7 +3581,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3599,7 +3599,7 @@
 							)
 						)
 					)
-					(number "37"
+					(number "41"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3617,7 +3617,7 @@
 							)
 						)
 					)
-					(number "15"
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3854,7 +3854,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3873,7 +3873,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3892,7 +3892,7 @@
 							)
 						)
 					)
-					(number "21"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3911,7 +3911,7 @@
 							)
 						)
 					)
-					(number "22"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3930,7 +3930,7 @@
 							)
 						)
 					)
-					(number "23"
+					(number "29"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3949,7 +3949,7 @@
 							)
 						)
 					)
-					(number "24"
+					(number "30"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3968,7 +3968,7 @@
 							)
 						)
 					)
-					(number "25"
+					(number "37"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3987,7 +3987,7 @@
 							)
 						)
 					)
-					(number "42"
+					(number "38"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3995,44 +3995,44 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 15.24 -25.4 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
+				
+							(pin input line
+				(at -15.24 -20.32 0)
+				(length 5.08)
+				(name "A19"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 15.24 -27.94 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)
+			)
+			(pin input line
+				(at -15.24 -30.48 0)
+				(length 5.08)
+				(name "CE2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+
 			)
 			(embedded_fonts no)
 		)
@@ -4399,7 +4399,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -4868,10 +4868,6 @@
 		(uuid "661c2fad-bf68-4d82-8b4b-3cf47616eb7b")
 	)
 	(no_connect
-		(at 220.98 90.17)
-		(uuid "7e524abd-d2fe-4276-ab59-5123a305aed8")
-	)
-	(no_connect
 		(at 220.98 72.39)
 		(uuid "89728ced-4189-4db5-99ec-99af447b8c31")
 	)
@@ -4890,6 +4886,16 @@
 	(no_connect
 		(at 215.9 261.62)
 		(uuid "fa763555-373a-42ae-8b68-908ca6ed6bf2")
+	)
+	(wire
+		(pts
+			(xy 492.76 90.17) (xy 499.11 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbb8ddea-b8bf-43df-a39a-c51987ed0a68")
 	)
 	(wire
 		(pts
@@ -6023,16 +6029,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 160.02) (xy 195.58 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "588ba1e8-cba4-49a6-9851-2f90ab139097")
-	)
-	(wire
-		(pts
 			(xy 396.24 101.6) (xy 389.89 101.6)
 		)
 		(stroke
@@ -6210,26 +6206,6 @@
 			(type default)
 		)
 		(uuid "6506e1ad-0494-4157-bbfb-986b1cb1661a")
-	)
-	(wire
-		(pts
-			(xy 214.63 160.02) (xy 210.82 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65a5cdad-d44c-4031-add4-2af5ed601985")
-	)
-	(wire
-		(pts
-			(xy 499.11 90.17) (xy 492.76 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65af6f50-6df6-4f96-8d83-9c02b5000990")
 	)
 	(wire
 		(pts
@@ -7850,6 +7826,96 @@
 			(type default)
 		)
 		(uuid "ffaf8b7b-7dcf-4afe-b622-be7690e0bf2a")
+	)
+	(label "A19RAM"
+		(at 447.04 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98679002-b3de-4490-9f86-e256b57b3f18")
+	)
+	(label "A19RAM"
+		(at 339.09 238.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9ca863f-fc5b-43dc-b3e3-1889faa8d015")
+	)
+	(label "A19RAM"
+		(at 450.85 238.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "352b20b7-65e5-44e0-8d12-1b92e4a7f814")
+	)
+	(label "A19RAM"
+		(at 340.36 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e377d215-8327-47ae-bb95-45bd3f409c55")
+	)
+	(label "A19RAM"
+		(at 504.19 237.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ed17d7da-aeec-4439-aa02-0703127454ae")
+	)
+	(label "A19RAM"
+		(at 396.24 238.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b9269adf-ba5e-4ab0-92f7-bc81d8ce532d")
+	)
+	(label "A19RAM"
+		(at 499.11 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "87f0d489-d6a5-4f76-a5fb-40dd83f63867")
+	)
+	(label "A19RAM"
+		(at 396.24 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ca4ea7a-03d4-4896-ba4a-b7f7f6eb8671")
+	)
+	(label "A19RAM"
+		(at 220.98 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24b4e9e0-698e-4cef-84d0-aca7b6080ca6")
 	)
 	(label "WEH"
 		(at 226.06 97.79 0)
@@ -11332,7 +11398,7 @@
 		(uuid "ff461fd5-ceb7-41b0-bfdd-932051b9645b")
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 462.28 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11350,7 +11416,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 464.4233 60.96 0)
 			(effects
 				(font
@@ -11731,7 +11797,543 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "power:+5V")
+		(at 447.04 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8862dbea-42c4-4ece-9bd8-e150281f7d1b")
+		(property "Reference" "#PWR076"
+			(at 450.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 443.23 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 447.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 447.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 447.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5af35f17-e4bb-43bb-ac80-bb67191d05da")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 339.09 248.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd24dbc1-edd1-4c01-8582-c0e1d842778f")
+		(property "Reference" "#PWR077"
+			(at 342.9 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 335.28 248.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 339.09 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d15bfabf-e578-4f7d-9a20-5ed588b3e8a7")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 450.85 248.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd6fa2ef-dc39-43f3-9630-20476b18c0c7")
+		(property "Reference" "#PWR078"
+			(at 454.66 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 447.04 248.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 450.85 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 450.85 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 450.85 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d66dc9ac-a306-4d72-94c2-77fe66969740")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 340.36 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e0ed40b-944e-4a72-91ea-0073a6fdaa85")
+		(property "Reference" "#PWR079"
+			(at 344.17 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 336.55 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 340.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de79d656-b787-4c83-b7c5-f7ca285f0d9e")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 504.19 247.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15520ec5-80cf-4ef5-a01b-8e3353db56b4")
+		(property "Reference" "#PWR080"
+			(at 508 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 500.38 247.6499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 504.19 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 504.19 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 504.19 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "501eac00-18e9-4107-9ba4-b894666a9cc7")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 396.24 248.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e6d8be9-d556-4542-9d93-15a8cc7e1999")
+		(property "Reference" "#PWR081"
+			(at 400.05 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 392.43 248.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 396.24 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 396.24 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 396.24 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d45cd28-a646-4460-afa7-e0434ce88bb0")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 499.11 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43bd9204-b025-4ba9-bc36-8ebce8c08beb")
+		(property "Reference" "#PWR082"
+			(at 502.92 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 495.3 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 499.11 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 499.11 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 499.11 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "851d4fbd-ca04-41fd-b90a-42733951cf7e")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 396.24 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e703114b-015c-4f02-ac3b-cf124a9deea2")
+		(property "Reference" "#PWR083"
+			(at 400.05 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 392.43 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 396.24 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 396.24 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 396.24 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6dc5a72-5aba-4568-a74f-a4d87305c713")
+		)
+		(instances
+			(project "PortableRAM-4MB"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PortableRAM:AS6C8008")
 		(at 354.33 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11749,7 +12351,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 356.4733 185.42 0)
 			(effects
 				(font
@@ -12059,7 +12661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 411.48 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12077,7 +12679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 411.48 55.88 0)
 			(effects
 				(font
@@ -12251,76 +12853,6 @@
 			(project "PortableRAM-4MB"
 				(path "/3f227e15-b881-4174-9819-781940a19688"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 203.2 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1da7a671-5820-4072-8ad1-237f2482ccda")
-		(property "Reference" "U10"
-			(at 203.2 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-3.3"
-			(at 203.2 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 203.2 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 205.74 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 203.2 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6e906559-1f80-4044-b4e8-14253a59878c")
-		)
-		(pin "3"
-			(uuid "90ece61b-ba6c-4acc-97ea-9063af30e5ab")
-		)
-		(pin "1"
-			(uuid "69d9d5c7-9405-4b42-bebd-ee40190d89f3")
-		)
-		(instances
-			(project "PortableRAM-4MB"
-				(path "/3f227e15-b881-4174-9819-781940a19688"
-					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -12533,7 +13065,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 462.28 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12551,7 +13083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 462.28 55.88 0)
 			(effects
 				(font
@@ -13006,7 +13538,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 466.09 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13024,7 +13556,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 468.2333 185.42 0)
 			(effects
 				(font
@@ -13333,7 +13865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 326.39 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13351,7 +13883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 326.39 45.72 0)
 			(effects
 				(font
@@ -13464,7 +13996,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 440.69 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13482,7 +14014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 440.69 171.45 0)
 			(effects
 				(font
@@ -13596,7 +14128,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 355.6 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13614,7 +14146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 355.6 55.88 0)
 			(effects
 				(font
@@ -14401,7 +14933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 355.6 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14418,7 +14950,7 @@
 				)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 368.3 91.44 0)
 			(effects
 				(font
@@ -14595,7 +15127,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 514.35 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14613,7 +15145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 514.35 57.15 0)
 			(effects
 				(font
@@ -14655,71 +15187,6 @@
 			(project "PortableRAM-4MB"
 				(path "/3f227e15-b881-4174-9819-781940a19688"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 193.04 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "76e6428e-0e04-495d-9253-8bc4a3ec1186")
-		(property "Reference" "#PWR029"
-			(at 193.04 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 193.04 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 193.04 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "faac95f7-7614-464f-af1b-30524ea95704")
-		)
-		(instances
-			(project "PortableRAM-4MB"
-				(path "/3f227e15-b881-4174-9819-781940a19688"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -14791,7 +15258,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 492.76 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14809,7 +15276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 492.76 44.45 0)
 			(effects
 				(font
@@ -14857,7 +15324,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 519.43 217.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14875,7 +15342,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 521.5733 184.15 0)
 			(effects
 				(font
@@ -15193,7 +15660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 386.08 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15211,7 +15678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 386.08 168.91 0)
 			(effects
 				(font
@@ -15785,7 +16252,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 411.48 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15803,7 +16270,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 413.6233 185.42 0)
 			(effects
 				(font
@@ -15981,73 +16448,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 167.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c7297ad-ac6b-4c11-bfbe-f6cb8731e067")
-		(property "Reference" "#PWR058"
-			(at 203.2 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1ca5f51-f2fd-4408-b22b-24b161158571")
-		)
-		(instances
-			(project "PortableRAM-4MB"
-				(path "/3f227e15-b881-4174-9819-781940a19688"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 92.71 172.72 0)
 		(unit 1)
@@ -16114,7 +16514,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 466.09 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16132,7 +16532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 466.09 180.34 0)
 			(effects
 				(font
@@ -16180,7 +16580,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 223.52 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16198,7 +16598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 223.52 156.21 0)
 			(effects
 				(font
@@ -16512,7 +16912,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 496.57 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16530,7 +16930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 496.57 167.64 0)
 			(effects
 				(font
@@ -16710,7 +17110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 326.39 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16728,7 +17128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 326.39 170.18 0)
 			(effects
 				(font
@@ -16846,7 +17246,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 519.43 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16864,7 +17264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 519.43 179.07 0)
 			(effects
 				(font
@@ -17507,7 +17907,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 514.35 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17525,7 +17925,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 516.4933 62.23 0)
 			(effects
 				(font
@@ -17703,7 +18103,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 354.33 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17721,7 +18121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 354.33 180.34 0)
 			(effects
 				(font
@@ -17769,7 +18169,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PortableRAM:IS61WV5128BLL")
+		(lib_id "PortableRAM:AS6C8008")
 		(at 411.48 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17787,7 +18187,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IS61WV5128BLL-10TLI"
+		(property "Value" "AS6C8008-55TIN"
 			(at 413.6233 60.96 0)
 			(effects
 				(font
@@ -18096,7 +18496,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 411.48 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18114,7 +18514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 411.48 180.34 0)
 			(effects
 				(font
@@ -18228,7 +18628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 384.81 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18246,7 +18646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 384.81 45.72 0)
 			(effects
 				(font
@@ -18288,72 +18688,6 @@
 			(project "PortableRAM-4MB"
 				(path "/3f227e15-b881-4174-9819-781940a19688"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 214.63 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6d4d2c9-dc47-4c20-a347-d88841328174")
-		(property "Reference" "#PWR057"
-			(at 214.63 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 214.63 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 214.63 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94a29b72-ed76-490b-80ab-8e4a52bbdb1c")
-		)
-		(instances
-			(project "PortableRAM-4MB"
-				(path "/3f227e15-b881-4174-9819-781940a19688"
-					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -19514,7 +19848,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 440.69 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19532,7 +19866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 440.69 43.18 0)
 			(effects
 				(font
