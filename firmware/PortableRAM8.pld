@@ -22,6 +22,13 @@ Device   f1502isptqfp44 ;
  * Chip A0-A18 = Mac A1-A19 (unchanged from v0.2).
  * NOTE: AS6C8008 pin 40 is CE2 (active-high second enable) — tie to +5V.
  *
+ * SIZE jumper (JP1 -> pin 34, 10K pull-up to +5V):
+ *   OPEN   = SIZE8 high = 8MB: all 8 chips populated, banks 0-3
+ *   CLOSED = SIZE8 low  = 4MB: populate U2,U3,U6,U7 only (banks 0-1,
+ *            window 0x100000-0x4FFFFF). Banks 2-3 are never decoded so
+ *            the card stays silent above 0x4FFFFF and the Mac's boot-time
+ *            memory sizing sees clean empty bus instead of floating data.
+ *
  * DTACK: NOT driven by this card. The Portable's CPU GLU / RFSHCNTL
  * generates DTACK for expansion accesses (confirmed: the working
  * discrete-logic reference card does not drive it either, and v0.1
@@ -47,6 +54,7 @@ PIN 8  = !UDS     ; /* upper data strobe (D8-15), active low       */
 PIN 10 = !LDS     ; /* lower data strobe (D0-7), active low        */
 PIN 11 = !SLEEP   ; /* sleep indicator, ASSUMED active low — verify */
 PIN 12 = A20      ;
+PIN 34 = SIZE8    ; /* size jumper: high(open)=8MB, low(closed)=4MB */
 PIN 13 = A21      ;
 PIN 14 = A22      ;
 PIN 15 = A23      ;
@@ -80,15 +88,15 @@ sel1 = page3 # page4 ;                     /* bank 1: 0x300000-0x4FFFFF */
 sel2 = page5 # page6 ;                     /* bank 2: 0x500000-0x6FFFFF */
 sel3 = page7 # page8 ;                     /* bank 3: 0x700000-0x8FFFFF */
 
-ramsel = sel0 # sel1 # sel2 # sel3 ;
+ramsel = sel0 # sel1 # (SIZE8 & (sel2 # sel3)) ;
 strobe = UDS # LDS ;                       /* any byte lane active   */
 active = ramsel & AS & awake ;
 
 /* ---------- equations ---------- */
 CE0 = sel0 & AS & strobe & awake ;
 CE1 = sel1 & AS & strobe & awake ;
-CE2 = sel2 & AS & strobe & awake ;
-CE3 = sel3 & AS & strobe & awake ;
+CE2 = SIZE8 & sel2 & AS & strobe & awake ;
+CE3 = SIZE8 & sel3 & AS & strobe & awake ;
 
 OE  = active & strobe &  RW ;              /* reads: both chips may drive,
                                               CPU ignores the idle lane   */
