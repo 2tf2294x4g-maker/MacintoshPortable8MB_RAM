@@ -14656,7 +14656,7 @@
 		)
 		(instances
 			(project "PortableRAM-8MB"
-				(path "/"
+				(path "/3f227e15-b881-4174-9819-781940a19688"
 					(reference "JP1")
 					(unit 1)
 				)
