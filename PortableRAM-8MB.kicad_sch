@@ -8461,7 +8461,7 @@
 		)
 		(uuid "237dad07-f79d-4729-8613-f3b100a173c9")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 220.98 90.17 0)
 		(effects
 			(font
@@ -8651,7 +8651,7 @@
 		)
 		(uuid "34ca186a-33ab-43b6-8721-1602062a9799")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 450.85 238.76 180)
 		(effects
 			(font
@@ -9391,7 +9391,7 @@
 		)
 		(uuid "6c3a05d0-4a21-42da-b05c-655964fe2133")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 396.24 114.3 180)
 		(effects
 			(font
@@ -9791,7 +9791,7 @@
 		)
 		(uuid "876c115e-fcc4-4af0-ad58-511f79c3703d")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 499.11 115.57 180)
 		(effects
 			(font
@@ -9981,7 +9981,7 @@
 		)
 		(uuid "9706a9e5-fec3-4b57-bbad-5957e41ca7ca")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 447.04 114.3 180)
 		(effects
 			(font
@@ -10401,7 +10401,7 @@
 		)
 		(uuid "b86d41bd-2f8d-4229-83ec-b1d0ef3e5394")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 396.24 238.76 180)
 		(effects
 			(font
@@ -10971,7 +10971,7 @@
 		)
 		(uuid "d9b7350a-9422-4eca-bcf7-c4daf857a501")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 339.09 238.76 180)
 		(effects
 			(font
@@ -11141,7 +11141,7 @@
 		)
 		(uuid "e377b1e8-e23a-45e7-8cd1-ff4fc2c5171e")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 340.36 114.3 180)
 		(effects
 			(font
@@ -11341,7 +11341,7 @@
 		)
 		(uuid "ed0909e7-72d0-4047-8ac7-df154ccfa67b")
 	)
-	(label "A19RAM"
+	(label "BANKSEL"
 		(at 504.19 237.49 180)
 		(effects
 			(font

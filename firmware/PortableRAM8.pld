@@ -18,7 +18,7 @@ Device   f1502isptqfp44 ;
  * Decode by 1MB page (page = A23:A20, values 1..8):
  *   CE0 = pages 1-2, CE1 = 3-4, CE2 = 5-6, CE3 = 7-8
  * Within each bank the SRAMs' A19 selects the page half. Odd pages are the
- * low half: chip A19 = !A20 (new CPLD output A19RAM, route to all pin-18s).
+ * low half: chip A19 = !A20 (new CPLD output BANKSEL, route to all pin-18s).
  * Chip A0-A18 = Mac A1-A19 (unchanged from v0.2).
  * NOTE: AS6C8008 pin 40 is CE2 (active-high second enable) — tie to +5V.
  *
@@ -69,7 +69,7 @@ PIN 25 = DIR      ; /* '245 direction: high = read (SRAM->CPU, A->B) */
 PIN 27 = !DOE     ; /* '245 output enable, both transceivers         */
 PIN 28 = !WEL     ; /* write enable, LOW byte chips U2-U5            */
 PIN 30 = !WEH     ; /* write enable, HIGH byte chips U6-U9           */
-PIN 33 = A19RAM   ; /* SRAM A19 (pin 18 on all chips): page half     */
+PIN 33 = BANKSEL   ; /* bank-half select -> SRAM A19 (pin 18, all chips) */
 
 /* ---------- intermediate terms ---------- */
 awake  = !SLEEP ;                          /* high when system awake */
@@ -107,4 +107,4 @@ DIR = RW ;                                 /* read: A(SRAM) -> B(bus)     */
 DOE = active & strobe ;                    /* transceivers only during
                                               our own strobed accesses    */
 
-A19RAM = !A20 ;                            /* odd pages = low half of bank */
+BANKSEL = !A20 ;                            /* odd pages = low half of bank */
