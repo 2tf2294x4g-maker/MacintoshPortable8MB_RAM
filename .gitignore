@@ -1,0 +1,23 @@
+# KiCad per-user / regenerated files
+*.kicad_prl
+fp-info-cache
+*-backups/
+*-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+_autosave-*
+*.lck
+~*.lck
+
+# Generated fab outputs (re-plot from the board; zip what you ship)
+Gerbers/
+*.gbr
+*.gbrjob
+*.drl
+*.zip
+
+# Reports (regenerate as needed)
+*.rpt
+
+# macOS
+.DS_Store

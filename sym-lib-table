@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PortableRAM")(type "KiCad")(uri "${KIPRJMOD}/PortableRAM.kicad_sym")(options "")(descr ""))
+)

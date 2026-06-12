@@ -1,0 +1,102 @@
+Name     PortableRAM8 ;
+PartNo   ATF1502ASL-25AU44 ;
+Date     2026-06-10 ;
+Revision 10 ;
+Designer G. Campbell ;
+Company  - ;
+Assembly Mac Portable 8MB RAM Card v2.0 ;
+Location U1 ;
+Device   f1502isptqfp44 ;
+
+/*
+ * Macintosh Portable 8MB SRAM expansion — address decode + control (v2)
+ *
+ * Memory: 8x AS6C8008 (1Mx8, 5V-capable) = 4 banks x 2MB (1Mx16) filling
+ * the ENTIRE expansion window 0x100000-0x8FFFFF. Total system RAM: 9MB (max).
+ *
+ * The window starts at 1MB, so 2MB banks straddle even-MB boundaries.
+ * Decode by 1MB page (page = A23:A20, values 1..8):
+ *   CE0 = pages 1-2, CE1 = 3-4, CE2 = 5-6, CE3 = 7-8
+ * Within each bank the SRAMs' A19 selects the page half. Odd pages are the
+ * low half: chip A19 = !A20 (new CPLD output A19RAM, route to all pin-18s).
+ * Chip A0-A18 = Mac A1-A19 (unchanged from v0.2).
+ * NOTE: AS6C8008 pin 40 is CE2 (active-high second enable) — tie to +5V.
+ *
+ * DTACK: NOT driven by this card. The Portable's CPU GLU / RFSHCNTL
+ * generates DTACK for expansion accesses (confirmed: the working
+ * discrete-logic reference card does not drive it either, and v0.1
+ * leaves CPLD pin 30 free — now reused as nWEH).
+ *
+ * WEL/WEH: the board (v0.2 netlist, 2026-06-10) routes pin 28 (/WE) to the
+ * low-byte chips U2-U5 and pin 30 (/WEH) to the high-byte chips U6-U9.
+ *
+ * JTAG: pins 1(TDI) 7(TMS) 26(TCK) 32(TDO) reserved — keep JTAG enabled
+ * in the fitter options or you lock yourself out of the chip.
+ *
+ * !!! ASSUMPTION TO VERIFY BEFORE FIRST POWER-ON !!!
+ * /SLEEP polarity is assumed ACTIVE-LOW (low = system sleeping). Verify
+ * against the Portable schematic / measure J1 before trusting sleep
+ * behavior. If it is active-high, flip the AWAKE equation below.
+ */
+
+/* ---------- inputs ---------- */
+PIN 2  = !AS      ; /* 68000 address strobe, active low            */
+PIN 3  = RW       ; /* 68000 R/W: high = read, low = write         */
+PIN 6  = DELAY_CS ; /* RC-delayed select (unused in rev 01)        */
+PIN 8  = !UDS     ; /* upper data strobe (D8-15), active low       */
+PIN 10 = !LDS     ; /* lower data strobe (D0-7), active low        */
+PIN 11 = !SLEEP   ; /* sleep indicator, ASSUMED active low — verify */
+PIN 12 = A20      ;
+PIN 13 = A21      ;
+PIN 14 = A22      ;
+PIN 15 = A23      ;
+
+/* ---------- outputs ---------- */
+PIN 18 = !CE0     ; /* bank 0: U2+U6, 0x100000-0x2FFFFF */
+PIN 19 = !CE1     ; /* bank 1: U3+U7, 0x300000-0x4FFFFF */
+PIN 20 = !CE2     ; /* bank 2: U4+U8, 0x500000-0x6FFFFF */
+PIN 21 = !CE3     ; /* bank 3: U5+U9, 0x700000-0x8FFFFF */
+PIN 22 = !OE      ; /* common SRAM output enable        */
+PIN 25 = DIR      ; /* '245 direction: high = read (SRAM->CPU, A->B) */
+PIN 27 = !DOE     ; /* '245 output enable, both transceivers         */
+PIN 28 = !WEL     ; /* write enable, LOW byte chips U2-U5            */
+PIN 30 = !WEH     ; /* write enable, HIGH byte chips U6-U9           */
+PIN 33 = A19RAM   ; /* SRAM A19 (pin 18 on all chips): page half     */
+
+/* ---------- intermediate terms ---------- */
+awake  = !SLEEP ;                          /* high when system awake */
+
+page1 = !A23 & !A22 & !A21 &  A20 ;        /* 0x1xxxxx */
+page2 = !A23 & !A22 &  A21 & !A20 ;        /* 0x2xxxxx */
+page3 = !A23 & !A22 &  A21 &  A20 ;        /* 0x3xxxxx */
+page4 = !A23 &  A22 & !A21 & !A20 ;        /* 0x4xxxxx */
+page5 = !A23 &  A22 & !A21 &  A20 ;        /* 0x5xxxxx */
+page6 = !A23 &  A22 &  A21 & !A20 ;        /* 0x6xxxxx */
+page7 = !A23 &  A22 &  A21 &  A20 ;        /* 0x7xxxxx */
+page8 =  A23 & !A22 & !A21 & !A20 ;        /* 0x8xxxxx */
+
+sel0 = page1 # page2 ;                     /* bank 0: 0x100000-0x2FFFFF */
+sel1 = page3 # page4 ;                     /* bank 1: 0x300000-0x4FFFFF */
+sel2 = page5 # page6 ;                     /* bank 2: 0x500000-0x6FFFFF */
+sel3 = page7 # page8 ;                     /* bank 3: 0x700000-0x8FFFFF */
+
+ramsel = sel0 # sel1 # sel2 # sel3 ;
+strobe = UDS # LDS ;                       /* any byte lane active   */
+active = ramsel & AS & awake ;
+
+/* ---------- equations ---------- */
+CE0 = sel0 & AS & strobe & awake ;
+CE1 = sel1 & AS & strobe & awake ;
+CE2 = sel2 & AS & strobe & awake ;
+CE3 = sel3 & AS & strobe & awake ;
+
+OE  = active & strobe &  RW ;              /* reads: both chips may drive,
+                                              CPU ignores the idle lane   */
+WEL = active & LDS    & !RW ;              /* writes strictly per byte    */
+WEH = active & UDS    & !RW ;
+
+DIR = RW ;                                 /* read: A(SRAM) -> B(bus)     */
+DOE = active & strobe ;                    /* transceivers only during
+                                              our own strobed accesses    */
+
+A19RAM = !A20 ;                            /* odd pages = low half of bank */

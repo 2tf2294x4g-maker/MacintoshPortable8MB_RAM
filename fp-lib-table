@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PortableRAM")(type "KiCad")(uri "${KIPRJMOD}/PortableRAM.pretty")(options "")(descr "Local project footprints - Samtec BCS-125-F-D-HE"))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+)
