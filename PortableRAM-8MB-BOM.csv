@@ -1,0 +1,10 @@
+Ref,Qty,Value,Package,Manufacturer,Mfr Part Number,Notes
+U2-U9,8,AS6C8008-55TIN,TSOP-II-44 (10.16x18.41mm P0.8mm),Alliance Memory,AS6C8008-55STIN,1Mx8 SRAM 5V 55ns; order 1-2 spares; 8 chips = 8MB
+U1,1,ATF1502ASL,TQFP-44 (10x10mm P0.8mm),Microchip,ATF1502ASL-25AU44,5V CPLD (ASL = 5V; do NOT order ASV which is 3.3V); needs JTAG programming; order a spare
+U11 U12,2,74HC245,SOIC-20W (7.5mm wide),TI/Nexperia,SN74HC245DW,Octal bus transceiver 5V; verify WIDE SOIC-20 body (DW/DWR suffix)
+J1,1,RAM Connector,Samtec BCS-125-F-D-HE,Samtec,BCS-125-F-D-HE,50-pin 2x25 2.54mm socket strip; footprint verified vs drawing
+J2,1,JTAG Header 1x06,PinHeader 2.54mm 1x06 vertical,Generic,,Standard 0.1in header for CPLD JTAG programming
+JP1,1,SIZE jumper 1x02,PinHeader 2.54mm 1x02 vertical,Generic,,Size select: OPEN=8MB (all 8 SRAMs) / CLOSED=4MB (populate U2 U3 U6 U7 only). Add one 2.54mm shunt.
+C1-C12 C17 C18,14,100nF,0805 (2012 metric),Generic,,X7R 50V ceramic; one per chip + per CPLD VCC pin; buy strip of 50+
+C13-C16 C19,5,10uF,0805 (2012 metric),Generic,,X5R 16V ceramic bulk; C19 at J1 power entry; buy 10+
+R2-R5,4,10K,0805 (2012 metric),Generic,,5% thick film pull-ups (R5 = SIZE8 jumper pull-up to +5V); buy strip
