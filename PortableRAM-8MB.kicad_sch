@@ -4896,6 +4896,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "ERC power anchors — +5V / GND arrive via J1\n(PWR_FLAGs tell ERC these rails are driven)"
+		(exclude_from_sim no)
+		(at 19.05 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da5c4d4c-994a-48de-bd26-a120643a65c8")
+	)
 	(text "JTAG"
 		(exclude_from_sim no)
 		(at 88 150 0)
