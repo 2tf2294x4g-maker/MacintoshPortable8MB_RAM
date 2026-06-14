@@ -1,5 +1,5 @@
 Ref,Qty,Value,Package,Manufacturer,Mfr Part Number,Notes
-U2-U9,8,AS6C8008-55TIN,TSOP-II-44 (10.16x18.41mm P0.8mm),Alliance Memory,AS6C8008-55STIN,1Mx8 SRAM 5V 55ns; order 1-2 spares; 8 chips = 8MB
+U2-U9,8,AS6C8008-55ZIN,TSOP-II-44 (10.16x18.41mm P0.8mm),Alliance Memory,AS6C8008-55ZIN,1Mx8 SRAM 5V 55ns (Z=TSOP-II pkg); ~$13-15 each; order 1-2 spares; 8 chips = 8MB
 U1,1,ATF1502ASL,TQFP-44 (10x10mm P0.8mm),Microchip,ATF1502ASL-25AU44,5V CPLD (ASL = 5V; do NOT order ASV which is 3.3V); needs JTAG programming; order a spare
 U11 U12,2,74HC245,SOIC-20W (7.5mm wide),TI/Nexperia,SN74HC245DW,Octal bus transceiver 5V; verify WIDE SOIC-20 body (DW/DWR suffix)
 J1,1,RAM Connector,Samtec BCS-125-F-D-HE,Samtec,BCS-125-F-D-HE,50-pin 2x25 2.54mm socket strip; footprint verified vs drawing
