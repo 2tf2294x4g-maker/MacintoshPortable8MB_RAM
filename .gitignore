@@ -21,3 +21,7 @@ Gerbers/
 
 # macOS
 .DS_Store
+
+# Intermediate routing files (regenerate from the .kicad_pcb)
+*.dsn
+*.ses
