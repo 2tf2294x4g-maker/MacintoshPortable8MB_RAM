@@ -9,7 +9,7 @@ Location U1 ;
 Device   f1502isptqfp44 ;
 
 /*
- * Macintosh Portable 8MB SRAM expansion — address decode + control (v2)
+ * Macintosh Portable 8MB SRAM expansion - address decode + control (v2)
  *
  * Memory: 8x AS6C8008 (1Mx8, 5V) = 4 banks x 2MB (1Mx16) filling the
  * expansion window 0x100000-0x8FFFFF. Total system RAM: 9MB (max).
@@ -19,16 +19,16 @@ Device   f1502isptqfp44 ;
  * Chip A0-A18 = Mac A1-A19. AS6C8008 pin 40 (CS2, active-high enable)
  * tied to +5V on the board.
  *
- * CYCLE TIMING — qualified by the DATA STROBES (UDS*/LDS*), NOT AS*.
+ * CYCLE TIMING - qualified by the DATA STROBES (UDS*, LDS*), NOT AS*.
  * The Portable's RAM-expansion connector brings out R/W, UDS*, LDS* and
  * the address bus, but NOT AS* and NOT a sleep/SYS_PWR line (verified
  * against Apple 050-0219; AS* and pwr_dwn stay on-board feeding the
  * refresh controller). The proven discrete-logic reference card decodes
- * the same way — A20-A23 + UDS*/LDS* + R/W, no AS*, no sleep. CPLD pins
+ * the same way - A20-A23 + UDS*, LDS* + R/W, no AS*, no sleep. CPLD pins
  * 2/6/11 are wired to pulled-up nets (/AS, /DELAY_CS, /SLEEP) that the
  * connector does not drive; declared here for documentation but UNUSED.
  *
- * DTACK: NOT driven by this card — the Portable's CPU GLU / RFSHCNTL
+ * DTACK: NOT driven by this card - the Portable's CPU GLU / RFSHCNTL
  * generates DTACK for expansion accesses (verified 050-0219).
  *
  * WE is split per byte lane: pin 28 (/WE) -> low byte U2-U5 (gated LDS),
@@ -41,9 +41,11 @@ Device   f1502isptqfp44 ;
  *           2-3 never decoded, so the card stays silent above 0x4FFFFF
  *           and the Mac's boot RAM sizing sees clean bus, not garbage.
  *
- * JTAG: pins 1(TDI) 7(TMS) 26(TCK) 32(TDO) — keep JTAG enabled in the
+ * JTAG: pins 1(TDI) 7(TMS) 26(TCK) 32(TDO) - keep JTAG enabled in the
  * fitter or you lock yourself out of the chip.
  */
+
+PROPERTY ATMEL { jtag = on }; /* keep JTAG pins live for re-programming via Tigard */
 
 /* ---------- inputs (from connector) ---------- */
 PIN 3  = RW       ; /* 68000 R/W: high = read, low = write   */
@@ -56,10 +58,10 @@ PIN 15 = A23      ;
 PIN 34 = SIZE8    ; /* size jumper: high(open)=8MB, low(closed)=4MB */
 
 /* ---------- inputs present on CPLD but NOT driven by connector ----------
- * (pulled up on-board; left unused — see header)                         */
-PIN 2  = !AS      ; /* NOT on connector — unused */
-PIN 6  = DELAY_CS ; /* NOT on connector — unused */
-PIN 11 = !SLEEP   ; /* NOT on connector — unused */
+ * (pulled up on-board; left unused - see header)                         */
+PIN 2  = !AS      ; /* NOT on connector - unused */
+PIN 6  = DELAY_CS ; /* NOT on connector - unused */
+PIN 11 = !SLEEP   ; /* NOT on connector - unused */
 
 /* ---------- outputs ---------- */
 PIN 18 = !CE0     ; /* bank 0: U2+U6 */
