@@ -25,9 +25,20 @@ Outputs: `.jed` (program this), `.fit` (CHECK pin assignments + "JTAG = ON"), `.
 4. **`PROPERTY ATMEL { jtag = on };`** — keeps JTAG pins live so the Tigard can
    re-program. (Default is ON for the ispTQFP44 device, but be explicit.)
 
-## Programming (when boards arrive) — Tigard + OpenOCD
-1. Convert `.jed` -> `.svf` (via ATMISP, or a jed2svf path — TODO, set up at program time).
-2. `brew install open-ocd` on the Mac.
-3. Wire Tigard JTAG to J2: TDI=pin1, TMS=pin7, TCK=pin26, TDO=pin32 (+GND, +5V sense).
-4. `openocd -f interface/ftdi/tigard.cfg -c "transport select jtag" -f <atf1502-tap.cfg> -c "init; svf PortableRAM.svf; shutdown"`
-5. Board must be powered (5V) during programming.
+## JED -> SVF (DONE — cross-platform, on the Mac, no Wine)
+Uses fuseconv from whitequark/prjbureau (pure Python):
+```
+pip3 install --user bitarray
+git clone https://github.com/whitequark/prjbureau   # has util/fuseconv.py
+cd prjbureau && python3 -m util.fuseconv -d ATF1502AS <in>.jed <out>.svf
+```
+The .svf self-verifies (includes readback vectors). ATF1502AS: IR length 10,
+IDCODE 0x0150203f.
+
+## Programming (when boards arrive) — Tigard + OpenOCD, on the Mac
+1. `brew install open-ocd`
+2. Wire Tigard JTAG to J2: TDI=pin1, TMS=pin7, TCK=pin26, TDO=pin32 (+GND, +5V sense).
+3. Power the board (5V).
+4. Run the bundled script:  `./program.sh PortableRAM8.svf`
+   (wraps: openocd -f interface/ftdi/tigard.cfg, jtag newtap -irlen 10
+    -expected-id 0x0150203f, svf <file>)
