@@ -55516,8 +55516,9 @@
 	(embedded_fonts no)
 
 	(gr_text "Samtec BCS-125-F-D-HE"
-		(at 126 137.5)
+		(at 126 137.5 0)
 		(layer "F.SilkS")
+		(uuid "21905ee0-f3e5-4bd9-8ec8-8e1a43e2137a")
 		(effects
 			(font
 				(size 1 1)
