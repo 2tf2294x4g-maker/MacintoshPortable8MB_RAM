@@ -6,8 +6,8 @@
 	(paper "A1")
 	(title_block
 		(title "Mac Portable 4or8MB RAM Card")
-		(date "2026-06-12")
-		(rev "2.0-dev")
+		(date "2026-07-10")
+		(rev "2.0")
 		(company "campbellashe@mac.com")
 		(comment 1 "Designed in North Carolina")
 	)
@@ -11680,7 +11680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 464.4233 60.96 0)
 			(effects
 				(font
@@ -12212,7 +12212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 356.4733 185.42 0)
 			(effects
 				(font
@@ -13551,7 +13551,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 468.2333 185.42 0)
 			(effects
 				(font
@@ -15214,7 +15214,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 369.57 59.69 0)
 			(effects
 				(font
@@ -15672,7 +15672,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 521.5733 184.15 0)
 			(effects
 				(font
@@ -16737,7 +16737,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 413.6233 185.42 0)
 			(effects
 				(font
@@ -18662,7 +18662,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 516.4933 62.23 0)
 			(effects
 				(font
@@ -18924,7 +18924,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 413.6233 60.96 0)
 			(effects
 				(font
