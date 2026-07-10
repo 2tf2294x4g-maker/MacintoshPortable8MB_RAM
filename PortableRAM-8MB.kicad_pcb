@@ -325,7 +325,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4114,7 +4114,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4839,7 +4839,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5564,7 +5564,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6430,7 +6430,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -7863,7 +7863,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8588,7 +8588,7 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at 0 10.16 0)
 			(layer "F.Fab")
 			(hide yes)
