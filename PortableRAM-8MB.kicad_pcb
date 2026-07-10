@@ -1393,7 +1393,7 @@
 		)
 		(property "Value" "74HC245"
 			(at 0 3 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "0e3a55b9-02d2-4434-8bf1-9b84ee005a9b")
 			(effects
 				(font
@@ -1866,7 +1866,7 @@
 		(descr "TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=658), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(PT)")
 		(property "Reference" "U1"
-			(at 0 0.5 90)
+			(at -3.5 -7.6625 90)
 			(layer "F.SilkS")
 			(uuid "d730534f-2950-4f11-b972-76d9cbb4fab8")
 			(effects
@@ -1878,7 +1878,7 @@
 		)
 		(property "Value" "ATF1502ASL"
 			(at 0.5 -2.5 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "067df82a-e9a3-4e53-9eea-7d2d5af7ec71")
 			(effects
 				(font
@@ -2701,9 +2701,9 @@
 				)
 			)
 		)
-		(property "Value" "AS6C8008-55TIN"
+		(property "Value" "AS6C8008-55ZIN"
 			(at -2.5 0 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "674dac64-e835-4b22-8eb5-1018429c96ac")
 			(effects
 				(font
@@ -3427,7 +3427,7 @@
 		)
 		(property "Value" "RAM Connector"
 			(at -0.5 7.5 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "42b746c4-7268-404d-b8f6-a3d4397c8515")
 			(effects
 				(font
@@ -7157,7 +7157,7 @@
 		)
 		(property "Value" "74HC245"
 			(at 0 3 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "2c90f282-061f-48e9-a5ab-a52ee5c12724")
 			(effects
 				(font
@@ -9317,7 +9317,6 @@
 		(property "Value" "10µF"
 			(at 0 -1.68 0)
 			(layer "B.SilkS")
-			
 			(uuid "5f750716-4a62-4d98-bfcf-4de211d8613c")
 			(effects
 				(font
@@ -9462,9 +9461,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 -1.68 90)
+			(at -3 -2 90)
 			(layer "B.SilkS")
-			
 			(uuid "d3749d66-4ff9-4187-bd54-b24e96f4c974")
 			(effects
 				(font
@@ -9597,9 +9595,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 0)
+			(at -3.5 -2.5 0)
 			(layer "B.SilkS")
-			
 			(uuid "0f7f106d-debd-4b0a-a03d-89792e28fe38")
 			(effects
 				(font
@@ -9744,9 +9741,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 0)
+			(at -3.73 -3 0)
 			(layer "B.SilkS")
-			
 			(uuid "720feea4-b3bb-4fca-a311-ac1c12ae2eab")
 			(effects
 				(font
@@ -9891,9 +9887,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "e660f443-71e8-450f-80a3-781f2263f216")
 			(effects
 				(font
@@ -10038,9 +10033,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3.5 -2 90)
 			(layer "B.SilkS")
-			
 			(uuid "de884dc1-474c-4e4c-93e1-4421451d085e")
 			(effects
 				(font
@@ -10185,9 +10179,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3 -1.5875 90)
 			(layer "B.SilkS")
-			
 			(uuid "0424ad85-766b-4f3d-9056-56a75ee28b72")
 			(effects
 				(font
@@ -10332,9 +10325,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -2.5 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "883e39fc-3903-4455-bd7b-bdb025cef7ad")
 			(effects
 				(font
@@ -10479,9 +10471,8 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 1.03723 -10.005847 0)
+			(at -4 -2 0)
 			(layer "B.SilkS")
-			
 			(uuid "192dac4f-bc42-4c62-ae74-fc12e2b46664")
 			(effects
 				(font
@@ -10626,9 +10617,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 0)
+			(at -3.23 -2 0)
 			(layer "B.SilkS")
-			
 			(uuid "02e0f8b9-093f-4d3b-bd2e-990b889227be")
 			(effects
 				(font
@@ -10773,9 +10763,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "3e9c9b7a-39e3-44ed-ad6c-8c8b6dca391d")
 			(effects
 				(font
@@ -11067,9 +11056,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3.5 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "86a2236f-958d-4b54-a6cb-314113c399ac")
 			(effects
 				(font
@@ -11214,9 +11202,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -2.5 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "b241e9b2-ee61-4f9b-8d2e-fa947c01ce0d")
 			(effects
 				(font
@@ -11508,9 +11495,8 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 1.03723 -10.005847 0)
+			(at -4.0875 -2 0)
 			(layer "B.SilkS")
-			
 			(uuid "0f9f9831-32cf-40c6-9504-ba29cbd9b65a")
 			(effects
 				(font
@@ -11655,9 +11641,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 18.87473 -1.205847 0)
+			(at -2.5 -1.5 0)
 			(layer "B.SilkS")
-			
 			(uuid "a7dff9f9-8ee6-4467-b0ec-79e217bfcfbb")
 			(effects
 				(font
@@ -11802,9 +11787,8 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 1.03723 -10.005847 0)
+			(at -3.5875 -1.5 0)
 			(layer "B.SilkS")
-			
 			(uuid "1f4200c5-3547-4e6e-87ce-0c94ef0c9a14")
 			(effects
 				(font
@@ -11949,9 +11933,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -2.95 -2.0875 90)
 			(layer "B.SilkS")
-			
 			(uuid "e25b4fc6-4c6f-4300-8c83-ac65adcd3e84")
 			(effects
 				(font
@@ -12243,9 +12226,8 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 1.03723 -10.005847 0)
+			(at -3.5 -2.5 0)
 			(layer "B.SilkS")
-			
 			(uuid "a3d67869-e98a-4619-9b60-a20291a8e2e0")
 			(effects
 				(font
@@ -12390,9 +12372,8 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.03723 -10.005847 90)
+			(at -3 -1.5875 90)
 			(layer "B.SilkS")
-			
 			(uuid "a41c7e76-1c7a-49e3-9afa-8eeac5cc773c")
 			(effects
 				(font
@@ -12529,6 +12510,83 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "aab274a8-929a-407d-82f3-262ee59301b2")
+	)
+	(gr_text "GND"
+		(at 144 133 0)
+		(layer "F.SilkS")
+		(uuid "bf00030a-9a8d-42e9-90e2-ed3964623e46")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "VCC"
+		(at 146.5 133 0)
+		(layer "F.SilkS")
+		(uuid "f7a20302-c0a8-42dc-a586-4a0c1f2866d1")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "TDO"
+		(at 149 133 0)
+		(layer "F.SilkS")
+		(uuid "21976d69-043c-4ee7-b8f0-3ef2d54000f8")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "TDI"
+		(at 151.5 133 0)
+		(layer "F.SilkS")
+		(uuid "4a93b6e9-ca47-46ef-a335-251fa9844c38")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "TMS"
+		(at 154 133 0)
+		(layer "F.SilkS")
+		(uuid "80f3f87c-2dfb-4ddb-84bb-1468eace8506")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "1"
+		(at 156.5 131.8 0)
+		(layer "F.SilkS")
+		(uuid "94c6b019-2987-4afb-a039-fa3d63c0866d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "TCK"
+		(at 156.5 133.2 0)
+		(layer "F.SilkS")
+		(uuid "9456798b-36a1-43b6-ae60-bf6fc67fc9ad")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
 	)
 	(gr_text "4+8MB"
 		(at 113.4125 98.1 0)
@@ -55413,8 +55471,28 @@
 	)
 	(embedded_fonts no)
 
-	(gr_text "1"
-		(at 156.5 131.8)
+	(gr_rect
+		(start 105.5 77.5)
+		(end 142.5 121.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+	)
+	(gr_text "4MB"
+		(at 124.0 79.3)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.18)
+			)
+		)
+	)
+	(gr_text "JP1 CLOSED"
+		(at 124.0 80.9)
 		(layer "F.SilkS")
 		(effects
 			(font
@@ -55423,58 +55501,28 @@
 			)
 		)
 	)
-	(gr_text "TCK"
-		(at 156.5 133.2)
+	(gr_rect
+		(start 148.5 77.5)
+		(end 186.5 121.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+	)
+	(gr_text "8MB ONLY"
+		(at 167.5 79.3)
 		(layer "F.SilkS")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
+				(size 1.2 1.2)
+				(thickness 0.18)
 			)
 		)
 	)
-	(gr_text "TMS"
-		(at 159.04 133.2)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_text "TDI"
-		(at 161.58 133.2)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_text "TDO"
-		(at 164.12 133.2)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_text "VCC"
-		(at 166.66 133.2)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_text "GND"
-		(at 169.2 133.2)
+	(gr_text "JP1 OPEN"
+		(at 167.5 80.9)
 		(layer "F.SilkS")
 		(effects
 			(font
