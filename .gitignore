@@ -9,12 +9,8 @@ _autosave-*
 *.lck
 ~*.lck
 
-# Generated fab outputs (re-plot from the board; zip what you ship)
-Gerbers/
-*.gbr
-*.gbrjob
-*.drl
-*.zip
+# Generated fab outputs — committed so others can order without KiCad
+# *.gbr *.gbrjob *.drl *.zip  (not excluded)
 
 # Reports (regenerate as needed)
 *.rpt

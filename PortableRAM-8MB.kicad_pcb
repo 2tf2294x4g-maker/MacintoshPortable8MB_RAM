@@ -2691,7 +2691,7 @@
 		(descr "TSOP-II, 44 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSOP-II SO")
 		(property "Reference" "U2"
-			(at 0 -10.16 0)
+			(at 0 -11.5 0)
 			(layer "F.SilkS")
 			(uuid "5dc828e8-6edf-4e95-b6b7-c562e8446a1e")
 			(effects
@@ -4104,7 +4104,7 @@
 		(descr "TSOP-II, 44 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSOP-II SO")
 		(property "Reference" "U3"
-			(at 0 -10.5 180)
+			(at 0 -11.5 180)
 			(layer "F.SilkS")
 			(uuid "da20ce54-0df1-4567-b9c5-58b1946cc812")
 			(effects
@@ -4829,7 +4829,7 @@
 		(descr "TSOP-II, 44 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSOP-II SO")
 		(property "Reference" "U4"
-			(at 0 -10.5 180)
+			(at 0 -11.5 180)
 			(layer "F.SilkS")
 			(uuid "d8402760-640c-44d0-95f6-cd654945fbea")
 			(effects
@@ -7640,7 +7640,7 @@
 				)
 			)
 		)
-		(property "Value" "SIZE: open=8MB closed=4MB"
+		(property "Value" "JP1: open=8MB closed=4MB"
 			(at 3.5 7 0)
 			(layer "F.Fab")
 			(uuid "e675a057-3530-4a0e-8f59-f60a71f27fc3")
@@ -8578,7 +8578,7 @@
 		(descr "TSOP-II, 44 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSOP-II SO")
 		(property "Reference" "U5"
-			(at 0 -10.16 0)
+			(at 0 -11.5 0)
 			(layer "F.SilkS")
 			(uuid "3ae5a9c7-ae59-46b7-af75-49777c1cead6")
 			(effects
@@ -12499,6 +12499,28 @@
 			)
 		)
 	)
+	(gr_rect
+		(start 104.75 79.5)
+		(end 186.25 123.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "27985c73-28bf-4e9d-aa8e-856be8545adb")
+	)
+	(gr_rect
+		(start 105.75 80)
+		(end 142.25 123)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1523b9ea-41d1-4a20-a874-58720c821863")
+	)
 	(gr_poly
 		(pts
 			(xy 191.5 150) (xy 68.5 150) (xy 68.5 85) (xy 73 81) (xy 191.5 69)
@@ -12510,6 +12532,17 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "aab274a8-929a-407d-82f3-262ee59301b2")
+	)
+	(gr_text "JP1 CLOSED"
+		(at 134.5 122 0)
+		(layer "F.SilkS")
+		(uuid "2bd2b2fa-d5af-4b10-ab79-26d984cffbef")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
 	)
 	(gr_text "GND"
 		(at 144 133 0)
@@ -12581,6 +12614,17 @@
 		(at 156.5 133.2 0)
 		(layer "F.SilkS")
 		(uuid "9456798b-36a1-43b6-ae60-bf6fc67fc9ad")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "JP1 OPEN"
+		(at 178.5 122 0)
+		(layer "F.SilkS")
+		(uuid "eebb167f-cfa0-42ed-bdae-71dc6c7856d8")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -12689,25 +12733,25 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "RAM SIZE — ALL 8 CHIPS = 8MB (JP1 OPEN)"
-		(at 130 123 0)
+	(gr_text "4MB"
+		(at 128.5 122 0)
 		(layer "F.SilkS")
-		(uuid "ff4986e9-11b3-42ae-826d-7e4437ee668a")
+		(uuid "7d4b0013-0f7b-413f-b374-d89cf89795bc")
 		(effects
 			(font
 				(size 1.2 1.2)
-				(thickness 0.15)
+				(thickness 0.18)
 			)
 		)
 	)
-	(gr_text "U2,U3,U6,U7 ONLY = 4MB (JP1 CLOSED)"
-		(at 139.5 125.5 0)
+	(gr_text "8MB"
+		(at 172.5 122 0)
 		(layer "F.SilkS")
-		(uuid "52529d19-29ef-4b26-89b6-4ce321a4a19c")
+		(uuid "c54c6a43-1903-4eba-91d3-81b9884669fb")
 		(effects
 			(font
 				(size 1.2 1.2)
-				(thickness 0.15)
+				(thickness 0.18)
 			)
 		)
 	)
@@ -55470,65 +55514,4 @@
 		)
 	)
 	(embedded_fonts no)
-
-	(gr_rect
-		(start 105.5 77.5)
-		(end 142.5 121.5)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(fill none)
-		(layer "F.SilkS")
-	)
-	(gr_text "4MB"
-		(at 124.0 79.3)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 1.2 1.2)
-				(thickness 0.18)
-			)
-		)
-	)
-	(gr_text "JP1 CLOSED"
-		(at 124.0 80.9)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_rect
-		(start 148.5 77.5)
-		(end 186.5 121.5)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(fill none)
-		(layer "F.SilkS")
-	)
-	(gr_text "8MB ONLY"
-		(at 167.5 79.3)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 1.2 1.2)
-				(thickness 0.18)
-			)
-		)
-	)
-	(gr_text "JP1 OPEN"
-		(at 167.5 80.9)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
 )
