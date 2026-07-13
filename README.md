@@ -206,6 +206,26 @@ The SRAM dominates the cost. Compared to the 4MB card (~$93–103), the extra co
 
 ---
 
+## References & Acknowledgements
+
+This card would not exist without the following prior work:
+
+**Dynamic Engineering Mac Portable RAM Card**
+The address decode and bus control logic in `PortableRAM8.pld` is derived from the GAL22V10 PLD source files originally written for the Dynamic Engineering commercial RAM expansion card for the Mac Portable. These files define the core signal equations — bank chip-select generation, byte-lane write control via UDS*/LDS*, bus transceiver direction, and output enable timing. The original `.PLD` files were recovered and shared by *techknight* on the TinkerDifferent forum and #skunkworks Discord. Translated here from three GAL22V10 chips to a single ATF1502ASL CPLD, with corrections to the `r_w_u` equation and address decode base, and extended for 8MB capacity.
+
+**miejas — Macintosh Portable 4MB Memory Expansion**
+[https://github.com/miejas/Macintosh-Portable-4-MB-Memory-Expansion](https://github.com/miejas/Macintosh-Portable-4-MB-Memory-Expansion)
+Open-source 4MB RAM card whose connector pinout, bus transceiver approach, and firmware structure were used as a cross-reference to validate signal assignments and confirm that AS* and SLEEP* are not present on the expansion connector.
+
+**Reza Fouladian — PortableRAM BGA 8MB**
+[https://github.com/rezafouladian/PortableRAM-BGA-8MB](https://github.com/rezafouladian/PortableRAM-BGA-8MB)
+BGA-format 8MB card using the ATF1502ASV (3.3V CPLD) and SN74LVC4245A level translators. Used as a reference for the 8MB address decode strategy and CPLD pin planning.
+
+**Apple Mac Portable Developer Notes & Schematics**
+Apple's original hardware documentation for the Mac Portable expansion bus, memory map, and GLU register behaviour (including the $FC0200 DTACK register).
+
+---
+
 ## License
 
 Hardware released under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt). Firmware source (`PortableRAM8.pld`) released under MIT.
