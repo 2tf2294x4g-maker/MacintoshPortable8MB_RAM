@@ -4,7 +4,8 @@ Expands a Macintosh Portable to **9 MB total** (1 MB onboard + 8 MB this card) �
 
 All-5V design using 1M×8 SRAM chips. No level shifters, no LDO regulator, no 3.3V rail. Shares the same connector, CPLD, and bus transceiver approach as the [4MB card](https://github.com/2tf2294x4g-maker/MacintoshPortable4MB_RAM) but doubles capacity using larger SRAM.
 
-> **Status:** PCB ordered July 2026, awaiting build and validation.
+> ⚠️ **PRE-PRODUCTION — NOT TESTED**
+> This board has been designed and ordered but has not yet been assembled or validated on real hardware. Schematics, firmware, and Gerbers are provided as-is. Do not build for production use until hardware validation is complete.
 
 ---
 
