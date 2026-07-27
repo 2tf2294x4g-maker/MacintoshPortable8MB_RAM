@@ -1,7 +1,7 @@
 Name     PortableRAM8 ;
 PartNo   ATF1502ASL-25AU44 ;
-Date     2026-06-13 ;
-Revision 11 ;
+Date     2026-07-26 ;
+Revision 12 ;
 Designer G. Campbell ;
 Company  - ;
 Assembly Mac Portable 8MB RAM Card v2.0 ;
@@ -25,11 +25,17 @@ Device   f1502isptqfp44 ;
  * against Apple 050-0219; AS* and pwr_dwn stay on-board feeding the
  * refresh controller). The proven discrete-logic reference card decodes
  * the same way - A20-A23 + UDS*, LDS* + R/W, no AS*, no sleep. CPLD pins
- * 2/6/11 are wired to pulled-up nets (/AS, /DELAY_CS, /SLEEP) that the
- * connector does not drive; declared here for documentation but UNUSED.
+ * 6/11 are wired to pulled-up nets (/DELAY_CS, /SLEEP) that the
+ * connector does not drive; declared for documentation but UNUSED.
  *
- * DTACK: NOT driven by this card - the Portable's CPU GLU / RFSHCNTL
- * generates DTACK for expansion accesses (verified 050-0219).
+ * DTACK (pin 42, bodge wire to PDS slot pin B7): driven low whenever this
+ * card owns the bus cycle (active = ramsel & strobe). Asserts /DTACK
+ * directly to the 68000, bypassing the GLU entirely. Zero wait states for
+ * all 8MB. Combinatorial - no registered logic, no sleep/wake state to lose.
+ *
+ * EXT_DTACK (pin 41, optional second bodge wire to PDS slot pin B30): tells
+ * the GLU this cycle is handled externally, preventing any GLU interference.
+ * Same equation as DTACK. Add this wire if DTACK alone proves insufficient.
  *
  * WE is split per byte lane: pin 28 (/WE) -> low byte U2-U5 (gated LDS),
  * pin 30 (/WEH) -> high byte U6-U9 (gated UDS). A common WE would corrupt
@@ -59,7 +65,6 @@ PIN 34 = SIZE8    ; /* size jumper: high(open)=8MB, low(closed)=4MB */
 
 /* ---------- inputs present on CPLD but NOT driven by connector ----------
  * (pulled up on-board; left unused - see header)                         */
-PIN 2  = !AS      ; /* NOT on connector - unused */
 PIN 6  = DELAY_CS ; /* NOT on connector - unused */
 PIN 11 = !SLEEP   ; /* NOT on connector - unused */
 
@@ -73,7 +78,9 @@ PIN 25 = DIR      ; /* '245 direction (see DIR equation) */
 PIN 27 = !DOE     ; /* '245 output enable, both transceivers */
 PIN 28 = !WEL     ; /* write enable, LOW byte chips U2-U5  */
 PIN 30 = !WEH     ; /* write enable, HIGH byte chips U6-U9 */
-PIN 33 = BANKSEL   ; /* bank-half select -> SRAM A19 (pin 18, all chips) */
+PIN 33 = BANKSEL    ; /* bank-half select -> SRAM A19 (pin 18, all chips) */
+PIN 43 = !EXT_DTACK ; /* bodge -> PDS slot B30 (optional): keep GLU out of our cycles */
+PIN 42 = !DTACK     ; /* bodge -> PDS slot B7: drive /DTACK directly to 68000 */
 
 /* ---------- intermediate terms ---------- */
 page1 = !A23 & !A22 & !A21 &  A20 ;        /* 0x1xxxxx */
@@ -110,4 +117,9 @@ DIR = !RW ;                                /* A-side=bus, B-side=SRAM:
                                               write(RW=0) -> DIR high-> A->B -> bus->SRAM */
 DOE = active ;                             /* transceivers on during our access */
 
-BANKSEL = !A20 ;                           /* odd pages = low half of bank */
+BANKSEL     = !A20 ;                       /* odd pages = low half of bank */
+EXT_DTACK.OE = active ;                    /* tristate when not our cycle - avoids */
+EXT_DTACK    = active ;                    /* contention with GLU on shared PDS bus */
+
+DTACK.OE     = active ;                    /* tristate when not our cycle - avoids */
+DTACK        = active ;                    /* contention with GLU on shared PDS bus */
