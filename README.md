@@ -4,8 +4,7 @@ Expands a Macintosh Portable to **9 MB total** (1 MB onboard + 8 MB this card) �
 
 All-5V design using 1M×8 SRAM chips. No level shifters, no LDO regulator, no 3.3V rail. Shares the same connector, CPLD, and bus transceiver approach as the [4MB card](https://github.com/2tf2294x4g-maker/MacintoshPortable4MB_RAM) but doubles capacity using larger SRAM.
 
-> ⚠️ **PRE-PRODUCTION — NOT TESTED**
-> This board has been designed and ordered but has not yet been assembled or validated on real hardware. Schematics, firmware, and Gerbers are provided as-is. Do not build for production use until hardware validation is complete.
+> ✅ **HARDWARE VALIDATED** — Built and tested on a Mac Portable M5120 (July 2026). Boots reliably, passes 9 MB in About This Macintosh, and with the DTACK bodge (see below) outperforms the 1 MB baseline.
 
 ---
 
@@ -149,9 +148,27 @@ See [firmware/BUILD.md](firmware/BUILD.md) for full build and programming pipeli
 
 You should see **9 MB** in About This Macintosh.
 
-### Known bring-up note — speed after sleep
+### DTACK Performance Fix (firmware rev 12)
 
-The memory region above 4 MB (0x400000–0x8FFFFF) defaults to slow DTACK mode after the CPU wakes from sleep, until the motherboard register at `$FC0200` is read. This is a Mac Portable hardware quirk, not a card bug. A small INIT that pokes `$FC0200` on wake permanently fixes it. In normal use (no sleep) the card runs at full speed.
+The Mac Portable's GLU chip generates the /DTACK signal that tells the 68000 a memory access is complete. For the built-in RAM it does this with zero wait states, but for expansion RAM above 4 MB it inserts an extra wait state — slowing the 8 MB card to 51% vs the 1 MB card's 87% on Snooper. Worse, after sleep/wake the GLU loses its fast-DTACK state for that upper region entirely, collapsing performance to 22%.
+
+The fix: the ATF1502ASL CPLD on the RAM card now asserts /DTACK itself, via a bodge wire from CPLD pin 42 to PDS slot pin B7. The CPLD monitors the address bus and data strobes, and whenever a cycle falls within the card's memory window (0x100000–0x8FFFFF) it pulls /DTACK low directly — bypassing the GLU completely. The output is tristated for all other bus cycles so there's no contention.
+
+Because the logic is purely combinatorial (no registers, no state), it's immune to sleep/wake — the CPLD re-evaluates every cycle from scratch. The post-sleep collapse is gone.
+
+**Benchmark results (Speedometer 3.23 / Snooper Memory Move — System 7.1, M5120):**
+
+| Configuration | Speedometer | Snooper | Post-sleep |
+|---|---|---|---|
+| 1 MB card (baseline) | 1.990 | 87% | 1.985 |
+| 4 MB expansion card | 1.955 | 85% | — |
+| 8 MB card — no DTACK bodge | 1.486 | 51% | — |
+| 8 MB card — no bodge, after sleep | 0.974 | 22% | — |
+| **8 MB card + CPLD DTACK bodge** | **2.170** | **102%** | **2.170** |
+
+The CPLD's combinatorial DTACK is faster than the GLU — the 8 MB card with the bodge outperforms the 1 MB baseline. Post-sleep performance is identical to cold boot.
+
+**How to wire it:** Solder a bodge wire from CPLD pin 42 (U1, TQFP-44) to PDS slot pin B7 (/DTACK). The PDS connector is the 96-pin DIN-41612 on the Mac Portable motherboard (3 rows A/B/C, 32 pins each). Pin B7 is in row B, position 7 from the component side.
 
 ---
 
