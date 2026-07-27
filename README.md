@@ -8,6 +8,18 @@ All-5V design using 1M×8 SRAM chips. No level shifters, no LDO regulator, no 3.
 
 ---
 
+## Photos
+
+| | |
+|---|---|
+| ![About This Macintosh showing 9,216K](images/about-this-mac-9mb.jpeg) | ![RAM card installed in Mac Portable with DTACK bodge wire](images/ram-card-in-portable.jpeg) |
+| System 7.5.5 — 9,216K total memory | Card seated in Portable with orange DTACK bodge wire |
+
+![Close-up of DTACK bodge wire at PDS connector](images/dtack-bodge-wire-installed.jpeg)
+*Orange bodge wire running from CPLD pin 42 to PDS slot pin B7 (/DTACK)*
+
+---
+
 ## Specs
 
 | | |
