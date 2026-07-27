@@ -162,9 +162,17 @@ You should see **9 MB** in About This Macintosh.
 
 ### DTACK Performance Fix (firmware rev 12)
 
-The Mac Portable's GLU chip generates the /DTACK signal that tells the 68000 a memory access is complete. For the built-in RAM it does this with zero wait states, but for expansion RAM above 4 MB it inserts an extra wait state — slowing the 8 MB card to 51% vs the 1 MB card's 87% on Snooper. Worse, after sleep/wake the GLU loses its fast-DTACK state for that upper region entirely, collapsing performance to 22%.
+The Mac Portable's GLU chip generates /DTACK for the 68000 with region-dependent timing:
 
-The fix: the ATF1502ASL CPLD on the RAM card now asserts /DTACK itself, via a bodge wire from CPLD pin 42 to PDS slot pin B7. The CPLD monitors the address bus and data strobes, and whenever a cycle falls within the card's memory window (0x100000–0x8FFFFF) it pulls /DTACK low directly — bypassing the GLU completely. The output is tristated for all other bus cycles so there's no contention.
+| Address range | GLU /DTACK | Condition |
+|---|---|---|
+| 0x000000–0x4FFFFF | 2 clocks | Always — hardwired fast path |
+| 0x500000–0x8FFFFF | 6 clocks | Normal operation (register configured) |
+| 0x500000–0x8FFFFF | 18 clocks | After sleep/wake (register reset) |
+
+The 8 MB card spans 0x100000–0x8FFFFF, straddling the split. Banks 0–1 (0x100000–0x4FFFFF) already get the GLU's 2-clock fast path. Banks 2–3 (0x500000–0x8FFFFF) run at 6 clocks and collapse to 18 clocks after sleep/wake when the GLU's DTACK register loses its configuration.
+
+The fix: the ATF1502ASL CPLD now asserts /DTACK itself, via a bodge wire from CPLD pin 42 to PDS slot pin B7. The CPLD monitors the address bus and data strobes, and whenever a cycle falls within the card's memory window (0x100000–0x8FFFFF) it pulls /DTACK low directly — bypassing the GLU completely. The output is tristated for all other bus cycles so there's no contention.
 
 Because the logic is purely combinatorial (no registers, no state), it's immune to sleep/wake — the CPLD re-evaluates every cycle from scratch. The post-sleep collapse is gone.
 
