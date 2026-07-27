@@ -249,7 +249,7 @@ Open-source 4MB RAM card whose connector pinout, bus transceiver approach, and f
 
 **Reza Fouladian — PortableRAM BGA 8MB**
 [https://github.com/rezafouladian/PortableRAM-BGA-8MB](https://github.com/rezafouladian/PortableRAM-BGA-8MB)
-BGA-format 8MB card using the ATF1502ASV (3.3V CPLD) and SN74LVC4245A level translators. Used as a reference for the 8MB address decode strategy and CPLD pin planning.
+BGA-format 8MB card using the ATF1502ASV (3.3V CPLD) and SN74LVC4245A level translators. Used as a reference for the 8MB address decode strategy and CPLD pin planning. Reza also provided direct guidance on driving /DTACK from the CPLD and on the Mac Portable PDS connector pinout — specifically confirming that /DTACK is available on PDS pin B7 and can be driven directly from a CPLD output, which was the key insight that led to the DTACK bodge fix implemented in firmware rev 12. That fix eliminated the GLU wait-state penalty and the post-sleep performance collapse entirely.
 
 **Apple Mac Portable Developer Notes & Schematics**
 Apple's original hardware documentation for the Mac Portable expansion bus, memory map, and GLU register behaviour (including the $FC0200 DTACK register).
