@@ -190,6 +190,8 @@ The CPLD's combinatorial DTACK is faster than the GLU — the 8 MB card with the
 
 **How to wire it:** Solder a bodge wire from CPLD pin 42 (U1, TQFP-44) to PDS slot pin B7 (/DTACK). The PDS connector is the 96-pin DIN-41612 on the Mac Portable motherboard (3 rows A/B/C, 32 pins each). Pin B7 is in row B, position 7 from the component side.
 
+![PDS slot and RAM connector locations, with /DTACK (B7) marked](images/pds-slot-dtack-location.png)
+
 ---
 
 ## Cost
