@@ -18,6 +18,11 @@ All-5V design using 1M×8 SRAM chips. No level shifters, no LDO regulator, no 3.
 ![Close-up of DTACK bodge wire at PDS connector](images/dtack-bodge-wire-installed.jpeg)
 *Orange bodge wire running from CPLD pin 42 to PDS slot pin B7 (/DTACK)*
 
+| | |
+|---|---|
+| ![Component side of assembled v2 card with DTACK bodge wire](images/ram-card-component-side.jpeg) | ![Solder side of assembled v2 card](images/ram-card-solder-side.jpeg) |
+| Component side — all 8 AS6C8008 SRAMs, bus transceivers, CPLD, and DTACK bodge wire | Solder side — bypass caps and bulk caps
+
 ---
 
 ## Specs
