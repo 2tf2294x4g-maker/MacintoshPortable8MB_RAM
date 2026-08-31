@@ -274,4 +274,8 @@ Apple's original hardware documentation for the Mac Portable expansion bus, memo
 
 ## License
 
-Hardware released under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt). Firmware source (`PortableRAM8.pld`) released under MIT.
+- **Hardware** (schematics, PCB layout, Gerbers) — [CERN-OHL-S v2](LICENSE) · SPDX `CERN-OHL-S-2.0`
+- **Firmware source** (`PortableRAM8.pld`) — [MIT](LICENSE-MIT) · SPDX `MIT`
+
+Both licence texts are included in full in this repository.
+Do what you like — just share improvements.
